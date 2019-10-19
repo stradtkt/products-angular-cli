@@ -13,3 +13,6 @@
   transition: 0.4s ease-in-out;
   color: dodgerblue;
 }
+.dashboard {
+  margin: 115px 0 25px 0;
+}

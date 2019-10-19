@@ -6,22 +6,14 @@ import * as fromCategories from './categories';
 
 const routes: Routes = [
   {path: '', component: DashboardComponent},
-  {path: 'products',
-    children: [
-      {path: '', component: fromProducts.ProductListComponent, pathMatch: 'full'},
-      {path: 'add', component: fromProducts.ProductAddComponent},
-      {path: 'edit/:product_id', component: fromProducts.ProductEditComponent},
-      {path: ':product_id', component: fromProducts.ProductDetailComponent}
-    ]
-  },
-  {path: 'categories',
-    children: [
-      {path: '', component: fromCategories.CategoryListComponent, pathMatch: 'full'},
-      {path: 'add', component: fromCategories.CategoryAddComponent},
-      {path: 'edit/:cat_id', component: fromCategories.CategoryEditComponent},
-      {path: ':cat_id', component: fromCategories.CategoryDetailComponent}
-    ]
-  },
+  {path: 'products', component: fromProducts.ProductListComponent},
+  {path: 'products/add', component: fromProducts.ProductAddComponent},
+  {path: 'products/:product_id/edit', component: fromProducts.ProductEditComponent},
+  {path: 'products/:product_id', component: fromProducts.ProductDetailComponent},
+  {path: 'categories', component: fromCategories.CategoryListComponent},
+  {path: 'categories/add', component: fromCategories.CategoryAddComponent},
+  {path: 'categories/:cat_id/edit', component: fromCategories.CategoryEditComponent},
+  {path: 'categories/:cat_id', component: fromCategories.CategoryDetailComponent}
 ];
 
 @NgModule({

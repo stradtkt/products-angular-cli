@@ -6,7 +6,7 @@
           <div class="col-12 col-md-6">
             <ul>
               <li class="nav-item">
-                <a href="" class="nav-link">Dashboard</a>
+                <a routerLink="/" class="nav-link">Dashboard</a>
               </li>
               <li class="nav-item">
                 <div class="btn-group">
@@ -14,8 +14,19 @@
                     <span class="mr-2 p-2">Products</span>
                   </button>
                   <div class="dropdown-menu">
-                    <a class="dropdown-item" href="#">Products</a>
-                    <a class="dropdown-item" href="#">Add Product</a>
+                    <a class="dropdown-item" routerLink="/products">Products</a>
+                    <a class="dropdown-item" routerLink="/products/add">Add Product</a>
+                  </div>
+                </div>
+              </li>
+              <li class="nav-item">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-primary dropdown-toggle dropdown-toggle-split shadow-sm" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <span class="mr-2">Categories</span>
+                  </button>
+                  <div class="dropdown-menu">
+                    <a class="dropdown-item" routerLink="/categories">Categories</a>
+                    <a class="dropdown-item" routerLink="/categories/add">Add Category</a>
                   </div>
                 </div>
               </li>
@@ -38,7 +49,7 @@
       </div>
     </div>
   </div>
-  <nav class="navbar navbar-dark bg-dark">
+  <nav class="navbar navbar-dark bg-dark fixed-top">
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span> <span class="ml-2 text-white">Menu</span>
     </button>
