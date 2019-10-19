@@ -1,0 +1,15 @@
+/* You can add global styles to this file, and also import other style files */
+
+.nav-item {
+  list-style-type: none;
+  text-align: center;
+}
+.nav-item .nav-link {
+  text-decoration: none;
+  color: white;
+  font-family: Tahoma;
+}
+.nav-item .nav-link:hover {
+  transition: 0.4s ease-in-out;
+  color: dodgerblue;
+}
