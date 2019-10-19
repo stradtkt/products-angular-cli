@@ -8,6 +8,8 @@ import * as fromProducts from './products';
 import * as fromCategories from './categories';
 import {AppRoutingModule} from './app-routing.module';
 import {FormsModule} from '@angular/forms';
+import { RegisterComponent } from './components/register/register.component';
+import { LoginComponent } from './components/login/login.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +17,9 @@ import {FormsModule} from '@angular/forms';
     NavbarComponent,
     DashboardComponent,
     ...fromProducts.components,
-    ...fromCategories.components
+    ...fromCategories.components,
+    RegisterComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
