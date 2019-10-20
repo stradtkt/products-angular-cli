@@ -16,3 +16,22 @@
 .dashboard {
   margin: 115px 0 25px 0;
 }
+.product-img {
+  width: 10%;
+  height: 10%;
+  position: relative;
+  top: 20px;
+  left: 30px;
+}
+.product-title {
+  position: relative;
+  bottom: 35px;
+}
+.product-price {
+  position: relative;
+  bottom: 20px;
+}
+.product-desc {
+  position: relative;
+  bottom: 40px;
+}
