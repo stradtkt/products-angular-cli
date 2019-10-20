@@ -4,14 +4,14 @@
       <div class="products">
         <div class="card card-body shadow-sm">
           <h6 class="text-left text-primary">Products</h6>
-          <h1 class="ml-auto text-primary">21</h1>
+          <h1 class="ml-auto text-primary">{{products ? products.length : ''}}</h1>
         </div>
       </div>
     </div>
     <div class="col-12 col-md-4">
       <div class="card card-body shadow-sm">
         <h6 class="text-left text-info">Categories</h6>
-        <h1 class="text-right text-info">15</h1>
+        <h1 class="text-right text-info">{{categories ? categories.length : ''}}</h1>
       </div>
     </div>
     <div class="col-12 col-md-4">
